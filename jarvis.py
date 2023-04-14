@@ -77,6 +77,15 @@ if __name__ == "__main__":
 
         elif 'open youtube' in query:
             webbrowser.open("youtube.com")
+'''
+#SETUP OF CHROME AS DEFAULT WEB BROWSER
+chromedir='C:\Program Files\Google\Chrome\Application\chrome.exe'
+webbrowser.register('chrome',None,webbrowser.BackgroundBrowser(chromedir))
+
+        elif 'open youtube' in uservoice:
+            webbrowser.get('chrome').open('https://www.youtube.com/')
+            
+            '''
 
         elif 'open google' in query:
             webbrowser.open("google.com")
